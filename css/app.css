@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+.effect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: hsl(300, 2%, 9%);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.effect__word {
+  position: relative;
+  width: 100%;
+  font-size: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 2;
+}
+
+.effect__word span {
+  position: relative;
+  z-index: 2;
+}
+
+.effect__word::before {
+  content: 'I see so';
+  position: absolute;
+  top: -4px;
+  right: 0;
+  left: -10px;
+  color: #900404;
+  z-index: 1;
+}
+
+.effect__word::after {
+  content: 'I see so';
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  left: 0;
+  color: #37aaa8;
+  z-index: 0;
+}
